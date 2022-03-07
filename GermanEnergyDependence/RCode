@@ -171,7 +171,7 @@ ggplot(filter(euro_energy, country == "Germany", year >= 1950)) +
   annotate("text", x = 2022, y = 53.31, size = 4,
            label = "53.31")
 
-#@#@ FOR COAL COAL COAL
+#Coal - Production V.S. Consumption
 ggplot(filter(euro_energy, country == "Germany", year >= 1980)) +
   geom_line(mapping = aes(x = year, y = coal_production, color = "Production"), size = 1) +
   geom_line(mapping = aes(x = year, y = coal_consumption, color = "Consumption"), size = 1) +
@@ -181,23 +181,6 @@ ggplot(filter(euro_energy, country == "Germany", year >= 1980)) +
   theme(plot.title=element_text(face = "bold", color="black")) +
   theme(plot.subtitle=element_text(face = "bold", color="dimgrey")) +
   theme(legend.position = c(0.2,0.2),
-        legend.background = element_rect(fill = "white", color = "black"),
-        legend.title = element_blank())+
-  scale_fill_discrete(guide = guide_legend(reverse=TRUE)) +
-  theme(plot.title=element_text(face = "bold", color="black"),
-        plot.subtitle=element_text(face = "bold", color="dim grey"),
-        text = element_text(family = "Helvetica"))
-
-#@#@ FOR OIL OIL OIL
-ggplot(filter(euro_energy, country == "Germany", year >= 1950)) +
-  geom_line(mapping = aes(x = year, y = oil_production, color = "Production"), size = 1) +
-  geom_line(mapping = aes(x = year, y = oil_consumption, color = "Consumption"), size = 1) +
-  scale_color_manual(name = "", values = c("Production" = "darkblue", "Consumption" = "red")) +
-  ggtitle("Oil Production V.S. Consumption in Germany", subtitle = "(in terawatt-hours)") +
-  xlab("Year") + ylab("") +
-  theme(plot.title=element_text(face = "bold", color="black")) +
-  theme(plot.subtitle=element_text(face = "bold", color="dimgrey")) +
-  theme(legend.position = c(0.15,0.8),
         legend.background = element_rect(fill = "white", color = "black"),
         legend.title = element_blank())+
   scale_fill_discrete(guide = guide_legend(reverse=TRUE)) +
