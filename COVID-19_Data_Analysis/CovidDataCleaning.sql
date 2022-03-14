@@ -300,7 +300,7 @@ SET State =
 		WHEN 'Wyoming' THEN 'WY' 
 		ELSE NULL
 	END;
-# Territories if we ant to include them
+# Territories if we want to include them
 #        WHEN 'Puerto Rico' THEN 'PR'
 #        WHEN 'Northern Mariana Islands' THEN 'MP'
 #        WHEN 'Marshall Islands' THEN 'RMI'
