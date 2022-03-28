@@ -11,7 +11,7 @@ In MySQL, primarily consists of casting to fix data type issues.
 #### Data Exploration: 
 In MySQL, entirely consists of queries. Some more complicated queries in here than in 'data cleaning'.
 
-#### Tableau Dashboard:
+#### Tableau Dashboard: https://public.tableau.com/app/profile/paul.weston7859/viz/USCovidDashboard_16469440620940/USCovidDashboard
 
 ### Technologies: 
 MySQL v8.0.26, Tableau v2021.4.4
